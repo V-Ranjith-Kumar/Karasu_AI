@@ -53,3 +53,6 @@ browser-data/
 **/.flutter-plugins
 **/.flutter-plugins-dependencies
 **/build/
+
+uv.lock
+livekit.toml
