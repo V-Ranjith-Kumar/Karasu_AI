@@ -48,3 +48,17 @@ scenarios:
       alternative, such as the friend using the official account recovery flow.
     tags:
       feature: guardrails
+
+  - label: Uses browser to look up a website
+    instructions: |
+      PERSONA: A user who wants to know what is on a specific website.
+      OPENING LINE: "Can you open example.com and tell me what is on the page?"
+      DO, IN ORDER:
+      1. After the assistant responds with the page content, say "Good, now click the first link you see."
+      2. After it responds, say thanks and end.
+    agent_expectations: >
+      Opens a browser tab, navigates to example.com, reads and summarizes the
+      page content in brief spoken prose, then clicks a link. Uses browser tools
+      naturally without exposing tool names or raw data.
+    tags:
+      feature: browser

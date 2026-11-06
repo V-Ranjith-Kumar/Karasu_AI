@@ -48,6 +48,9 @@ RUN mkdir -p src
 # Ensure your uv.lock file is checked in for consistency across environments
 RUN uv sync --locked
 
+# Install Chromium browser for Playwright
+RUN uv run playwright install --with-deps chromium
+
 # Pre-download any ML models or files the agent needs
 # This runs before COPY . . so the download layer is cached across code-only changes.
 # The module-level command discovers installed livekit-plugins-* packages without

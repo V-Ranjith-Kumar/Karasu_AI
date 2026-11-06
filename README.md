@@ -99,19 +99,19 @@ lk app env --write --destination .env.local
 Run this command to speak to your agent directly in your terminal:
 
 ```console
-uv run python src/agent.py console
+lk agent console
 ```
 
-To run the agent for use with a frontend or telephony, use the `dev` command:
+To run the agent for use with a frontend or telephony in development mode (with auto-reload):
 
 ```console
-uv run python src/agent.py dev
+lk agent dev
 ```
 
 In production, use the `start` command:
 
 ```console
-uv run python src/agent.py start
+lk agent start
 ```
 
 ## Frontend & Telephony

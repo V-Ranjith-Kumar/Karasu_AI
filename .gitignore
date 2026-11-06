@@ -31,3 +31,25 @@ KMS
 
 # GitHub CLI
 .github/personal-instructions.md
+
+# Playwright browser data
+browser-data/
+
+# Logs
+*.log
+
+# Environment secrets
+**/.env
+**/.env.*
+!**/.env.example
+
+# Frontend generated files
+**/node_modules/
+**/.next/
+**/tsconfig.tsbuildinfo
+
+# Flutter generated files
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/build/
